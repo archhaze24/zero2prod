@@ -1,6 +1,6 @@
-use std::net::TcpListener;
-use actix_web::{App, HttpResponse, HttpServer, Responder, web};
 use actix_web::dev::Server;
+use actix_web::{App, HttpResponse, HttpServer, Responder, web};
+use std::net::TcpListener;
 
 async fn health_check() -> impl Responder {
     HttpResponse::Ok()
